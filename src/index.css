@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .keyboard {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}

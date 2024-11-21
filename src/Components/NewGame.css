@@ -1,0 +1,74 @@
+.new-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color:red; /* Background for the entire page */
+  background-size: cover; /* Ensures background scales to fit */
+  background-position: center; /* Keeps background centered */
+  margin: 0; /* Removes any default body margins */
+}
+
+
+  .name-box {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color:white;
+    width: 55%;
+    height: 15%;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+  
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Adjust columns */
+    gap: 0.2rem; /* Reduce the gap between the keys */
+    margin-top: 1rem;
+    width: 55%; /* Match the width of the name-box */
+  }
+  
+  
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  
+  .actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .center-page {
+    display: flex; /* Ensures compatibility if reused */
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    .name-box {
+      width: 80%; /* Adjust for smaller screens */
+    }
+    .keyboard {
+      width: 80%; /* Adjust for smaller screens */
+      grid-template-columns: repeat(4, 1fr); /* Fewer columns on smaller screens */
+    }
+    button {
+      font-size: 0.9rem; /* Smaller font size */
+    }
+  }
+  

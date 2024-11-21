@@ -1,0 +1,21 @@
+.start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('12.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;  /* Ensure the container takes the full width */
+  }
+  
+  .center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,0 +1,60 @@
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #80007e; /* Background color */
+    gap: 1rem; /* Spacing between buttons */
+  }
+  
+  
+    button {
+      width: 80%; /* Relative width */
+      max-width: 300px; /* Limit maximum width */
+      height: 50px;
+      font-size: 1rem; /* Scales better with screen size */
+    background-color: green; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #666; /* Hover effect */
+  }
+  
+  @media (max-width: 600px) {
+    button {
+      width: 90%; /* Adjust button width for small devices */
+      font-size: 0.9rem; /* Slightly smaller text size */
+    }
+  }
+
+  .main-menu {
+    position: relative;
+  }
+  
+  .back-btn {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: red;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .back-btn {
+      width: 90%; /* Adjust button width for small devices */
+      font-size: 0.9rem; /* Slightly smaller text size */
+    }
+  }
+
+  
+  

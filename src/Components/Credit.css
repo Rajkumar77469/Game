@@ -1,0 +1,86 @@
+.credits-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .credits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .credits-item {
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .credits-heading {
+    font-weight: bold;
+    color: white;
+    background-color: #0000ff; /* Blue background */
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .credits-value {
+    margin-top: 0.5rem;
+    color: white;
+    background-color: #add8e6; /* Light blue background */
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .credits-links {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  
+  .credits-links a {
+    color: white;
+    background-color:#FFB6C1; /* Blue background */
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .credits-links a:hover {
+    background-color: #000099; /* Darker blue on hover */
+  }
+
+
+  @media (max-width: 600px) {
+    .credits-links {
+      position: relative;
+      bottom: unset;
+      right: unset;
+      flex-direction: column; /* Stack the links vertically */
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .credits-links a {
+      padding: 0.5rem;
+      font-size: 1rem; /* Adjust size for smaller screens */
+    }
+  }
+  
+  
